@@ -1,0 +1,15 @@
+algoritmo VerificarFaixa
+    // Declaração de variáveis
+    inteiro valor
+    
+    // Solicitar ao usuário que insira um valor entre 1 e 9
+    escreva("Digite um valor entre 1 e 9: ")
+    leia(valor)
+    
+    // Verificar se o valor está dentro da faixa permitida
+    se (valor >= 1) e (valor <= 9) então
+        escreva("O valor está na faixa permitida")
+    senao
+        escreva("O valor está fora da faixa permitida")
+    fimse
+fimalgoritmo
