@@ -1,0 +1,8 @@
+Início
+    Ler um número inteiro e armazená-lo em uma variável num
+    Se o resto da divisão de num por 2 for igual a zero, então
+        Escrever "O número é par"
+    Senão,
+        Escrever "O número é ímpar"
+    Fim Se
+Fim
