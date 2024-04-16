@@ -1,0 +1,12 @@
+Algoritmo ExibirNomeSobrenome
+
+Var
+    nome, sobrenome: caractere
+
+Inicio
+    Escreva("Digite o seu nome: ")
+    Leia(nome)
+    Escreva("Digite o seu sobrenome: ")
+    Leia(sobrenome)
+    Escreva("Nome completo: ", nome, " ", sobrenome)
+FimAlgoritmo
