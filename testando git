@@ -1,0 +1,20 @@
+Algoritmo SaudacaoPorSexo
+    // Declaração de variáveis
+    caractere sexo
+    caractere nome[100]
+    
+    // Solicitar ao usuário que insira o nome da pessoa
+    Escreva("Digite o nome da pessoa: ")
+    Leia(nome)
+    
+    // Solicitar ao usuário que insira o sexo da pessoa
+    Escreva("Digite o sexo da pessoa (M para masculino, F para feminino): ")
+    Leia(sexo)
+    
+    // Verificar o sexo e imprimir a saudação adequada
+    Se sexo = "M" ou sexo = "m" então
+        Escreva("Ilmo Sr. ", nome)
+    Senão Se sexo = "F" ou sexo = "f" então
+        Escreva("Ilma Sra. ", nome)
+    FimSe
+FimAlgoritmo

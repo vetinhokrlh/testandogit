@@ -1,0 +1,47 @@
+algoritmo "scalc"
+
+// Função: Calculadora simples
+// Autor: Caio Ladislau
+// Data: 24/3/2011
+//
+// Este programa é uma simples calculadora para as operações
+// básicas. Ele utiliza os comandos: atribuição (<-), se, fim
+// senao, escreva, escreval, leia, escolha, caso, fim_escolha
+// e por fim, faz a verificação de divisão por zero.
+
+var
+    n1, n2, saida: real
+    oper: caractere
+
+inicio
+    // Solicitar os números e a operação
+    escreval() // Pulando uma linha
+    escreva("Insira o primeiro número: ")
+    leia(n1)
+    escreva("Operação (+, -, *, /): ")
+    leia(oper)
+    escreva("Insira o segundo número: ")
+    leia(n2)
+    escreval() // Pulando uma linha
+
+    // Realizar a operação de acordo com a escolha do usuário
+    escolha (oper)
+        caso "+"
+            saida <- n1 + n2
+        caso "-"
+            saida <- n1 - n2
+        caso "*"
+            saida <- n1 * n2
+        caso "/"
+            se n2 = 0 entao
+                escreva("Erro! Divisão por zero. Insira um denominador diferente de zero.")
+            senao
+                saida <- n1 / n2
+            fimse
+    fim_escolha
+
+    // Exibir o resultado da operação
+    escreva("Resultado da operação: ", saida)
+    escreval()
+
+fimalgoritmo

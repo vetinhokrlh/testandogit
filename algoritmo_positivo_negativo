@@ -1,0 +1,21 @@
+Algoritmo ArmazenarNumeros
+
+Var
+    numero, A, B: inteiro
+
+Inicio
+    // Ler um número inteiro
+    Escreva("Digite um número inteiro: ")
+    Leia(numero)
+
+    // Verificar se o número é positivo ou negativo
+    Se numero >= 0 Então
+        A <- numero
+    Senao
+        B <- numero
+    FimSe
+
+    // Mostrar o valor armazenado em A e B
+    Escreva("O valor armazenado em A é: ", A)
+    Escreva("O valor armazenado em B é: ", B)
+FimAlgoritmo
